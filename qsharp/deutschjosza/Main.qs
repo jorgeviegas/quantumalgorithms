@@ -1,19 +1,19 @@
-namespace deutschjosza {
+namespace DeutschJoszaNamespace {
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Math;
     open Microsoft.Quantum.Measurement;
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
 
-    @EntryPoint()
-    operation Main() : Unit {
-        let isBalanced = DeutschJosza(16, OracleNQubit);
+    operation RunDeutschJosza(numQubits : Int) : Unit {
+        
+        let isBalanced = DeutschJosza(numQubits, OracleNQubit);
         Message($"Algorithm is balanced: {isBalanced} ");
 
-        let isBalanced2 = DeutschJosza(16, OracleAllZero);
+        let isBalanced2 = DeutschJosza(numQubits, OracleAllZero);
         Message($"Algorithm is balanced: {isBalanced2} ");
 
-        let isBalanced3 = DeutschJosza(16, OracleAllOne);
+        let isBalanced3 = DeutschJosza(numQubits, OracleAllOne);
         Message($"Algorithm is balanced: {isBalanced2} ");
     }
 }

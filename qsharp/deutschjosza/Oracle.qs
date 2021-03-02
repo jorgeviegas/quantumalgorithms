@@ -1,4 +1,4 @@
-﻿namespace deutschjosza {
+﻿namespace DeutschJoszaNamespace {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;

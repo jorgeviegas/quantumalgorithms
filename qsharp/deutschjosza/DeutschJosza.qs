@@ -1,4 +1,4 @@
-﻿namespace deutschjosza {
+﻿namespace DeutschJoszaNamespace {
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Math;
     open Microsoft.Quantum.Measurement;
@@ -20,16 +20,11 @@
 
         ApplyToEach(H, register);   
 
-        mutable qubitIndex = 0;
-
         for qubit in register {
-            Message($"Qubit number {qubitIndex}");
             let result = MResetZ(qubit);
             if IsResultOne(result){
                 set isBalanced = true;
             }
-            set qubitIndex = qubitIndex + 1;
-            Message($"Qubit result {isBalanced}");
         } 
 
         ResetAll(register);
