@@ -1,4 +1,4 @@
-namespace bernsteinvazirani {
+namespace BernsteinVaziraniNamespace {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;

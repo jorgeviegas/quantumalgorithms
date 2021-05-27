@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.Quantum.Simulation.Simulators;
-using BernsteinVaziraniNamespace;
+using simon;
 using System.Diagnostics;
 
 namespace wrapper
@@ -17,7 +17,7 @@ namespace wrapper
             {
                 Stopwatch stopWatch = new Stopwatch();
                 stopWatch.Restart(); 
-                var deutschJoszaResult = await RunBernsteinVazirani.Run(sim, numQubits, numQubits);
+                var simonResult = await Simon_Algorithm_Reference.Run(sim, numQubits);
                 stopWatch.Stop();   
                 TimeSpan ts = stopWatch.Elapsed;
 
