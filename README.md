@@ -4,3 +4,13 @@ This repository contains the implementation of some of the most famous Quantum A
 
 
 Universidade do Vale do Rio dos Sinos.
+
+
+
+|                     |  Microsoft Q#  |  IBM Qiskit    |  Google CirQ   |  Rigetti Pyquil|
+| ------------------- | -------------- | -------------- | -------------- | -------------- |
+|  Deutsch-Jozsa      |      ✅       |     ✅          |       ✅      |      ✅        |
+|  Bernstein-Vazirani |  			   |                |                |                |
+|  Simon              |  			   |                |                |                |
+|  Shor               |  			   |                |                |                |
+|  Grover             |  			   |                |                |                | 
