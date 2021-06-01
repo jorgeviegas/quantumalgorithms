@@ -13,17 +13,18 @@ namespace wrapper
 
             using var sim = new QuantumSimulator();
 
-            for (int numQubits = 3; numQubits < 32; numQubits++)
+            for (int numQubits = 15; numQubits < 18; numQubits++)
             {
                 Stopwatch stopWatch = new Stopwatch();
                 stopWatch.Restart(); 
                 var simonResult = await Simon_Algorithm_Reference.Run(sim, numQubits);
                 stopWatch.Stop();   
-                TimeSpan ts = stopWatch.Elapsed;
 
-                string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-                Console.WriteLine("Qubits: " + numQubits);
-                Console.WriteLine("RunTime: " + elapsedTime);
+                long ms = stopWatch.ElapsedMilliseconds;
+                float seconds = Convert.ToSingle(ms);
+                seconds = seconds / 1000;
+                
+                Console.WriteLine(seconds.ToString().Replace(".", ","));
             }
         }
     }
