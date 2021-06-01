@@ -10,7 +10,7 @@ Universidade do Vale do Rio dos Sinos.
 |                     |  Microsoft Q#  |  IBM Qiskit    |  Google CirQ   |  Rigetti Pyquil|
 | ------------------- | :------------: | :------------: | :------------: | :------------: |
 |  Deutsch-Jozsa      |      ✅       |      ✅       |      ✅      |      ✅        |
-|  Bernstein-Vazirani |  			   |                |                |      ✅       |
+|  Bernstein-Vazirani |      ✅       |                |                |      ✅       |
 |  Simon              |      ✅       |                |      ✅      |       ✅        |
 |  Shor               |  			   |      ✅       |                |                |
 |  Grover             |  			   |      ✅       |                |      ✅       | 
