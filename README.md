@@ -11,6 +11,6 @@ Universidade do Vale do Rio dos Sinos.
 | ------------------- | :------------: | :------------: | :------------: | :------------: |
 |  Deutsch-Jozsa      |      ✅       |      ✅       |      ✅           |      ✅        |
 |  Bernstein-Vazirani |      ✅       |       X        |                 |      ✅       |
-|  Simon              |      ✅       |                |      ✅          |       ✅        |
-|  Shor               |  		X	        |      ✅       |         X         |         X       |
-|  Grover             |  			        |      ✅       |                    |      ✅       | 
+|  Simon              |      ✅       |      ✅                |      ✅          |       ✅        |
+|  Shor               |  		X	        |      ✅         |         X         |         X       |
+|  Grover             |       ✅      |      ✅         |                    |      ✅       | 
