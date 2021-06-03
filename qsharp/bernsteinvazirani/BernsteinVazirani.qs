@@ -37,7 +37,6 @@ namespace BernsteinVaziraniNamespace {
 
         // The result is already contained in resultArray so no further
         // post-processing is necessary.
-        Message($"measured: {resultArray}");
 
         // Finally, the last qubit, which held the y-register, is reset.
         Reset(target);
@@ -99,7 +98,6 @@ namespace BernsteinVaziraniNamespace {
     // Int represents a bitstring using the little endian convention.
     operation RunBernsteinVazirani (nQubits : Int, patternInt : Int) : Int {
         let pattern = IntAsBoolArray(patternInt, nQubits);
-        Message($"pattern: {pattern}");
 
         let result = LearnParityViaFourierSampling(ParityOperation(pattern), nQubits);
         return BoolArrayAsInt(result);

@@ -5,8 +5,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Quantum.Numerics" Version="0.17.2105144881" />
-  </ItemGroup>
-
 </Project>
