@@ -13,4 +13,4 @@ Universidade do Vale do Rio dos Sinos.
 |  Bernstein-Vazirani |      ✅       |       X          |     ✅          |      ✅       |
 |  Simon              |      ✅       |      ✅          |      ✅          |       ✅        |
 |  Shor               |  		✅	        |      ✅         |         ✅         |         ✅       |
-|  Grover             |       ✅      |      ✅         |                    |      ✅       | 
+|  Grover             |       ✅      |      ✅         |         ✅            |      ✅       | 
