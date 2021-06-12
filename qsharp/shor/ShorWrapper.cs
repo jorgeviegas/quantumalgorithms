@@ -17,7 +17,7 @@ namespace wrapper
             {
                 Stopwatch stopWatch = new Stopwatch();
                 stopWatch.Restart(); 
-                var deutschJoszaResult = await QuantumPeriodFinding.Run(sim, 15, 8);
+                var deutschJoszaResult = await QuantumPeriodFinding.Run(sim, 15, 7);
                 stopWatch.Stop();   
                 TimeSpan ts = stopWatch.Elapsed;
 
